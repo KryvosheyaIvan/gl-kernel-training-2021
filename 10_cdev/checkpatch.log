@@ -1,0 +1,4 @@
+/home/ivan/repos/linux-stable/scripts/checkpatch.pl --no-tree -f cdev_module.c
+total: 0 errors, 0 warnings, 289 lines checked
+
+cdev_module.c has no obvious style problems and is ready for submission.
