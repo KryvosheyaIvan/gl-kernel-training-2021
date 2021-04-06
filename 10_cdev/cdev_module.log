@@ -1,0 +1,19 @@
+/tmp # insmod cdev_module.ko buff_size=2048
+[108342.007771] ProCamp CDEV Module inserted
+/tmp # echo "Hello!How are you??" > /dev/gl_chat-0
+/tmp # echo "Chardev is ready!" > /dev/gl_chat-0
+/tmp # cat /dev/gl_chat-0
+[108357.498125] Hello!How are you??
+[108357.498125] Chardev is ready!
+Hello!How are you??
+Chardev is ready!
+/tmp # echo "Really?" > /dev/gl_chat-0
+/tmp # echo "Really?  Are you sure?" > /dev/gl_chat-0
+/tmp # cat /dev/gl_chat-0
+[108460.716320] Really?
+[108460.716320] Really?  Are you sure?
+Really?
+Really?  Are you sure?
+/tmp # rmmod cdev_module
+[108472.763834] ProCamp CDEV Module removed
+[108472.763998] Deiniting character device...
